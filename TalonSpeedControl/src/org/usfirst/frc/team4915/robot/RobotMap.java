@@ -91,7 +91,11 @@ public class RobotMap {
             //leftMaster10.configPeakOutputVoltage(+12.0f, -12.0f);
             //rightMaster12.configPeakOutputVoltage(+12.0f, -12.0f);
             
-            // STEP 6: Add SmartDashboard controls for testing
+            // Add ramp up rate
+            leftMaster10.setVoltageRampRate(12.0);  // max allowable voltage change /sec: reach to 12V after 1sec
+            rightMaster12.setVoltageRampRate(12.0);
+            
+            // Add SmartDashboard controls for testing
             // Add SmartDashboard live window
             LiveWindow.addActuator("Drive Train", "Left Master 10", leftMaster10);
             LiveWindow.addActuator("Drive Train", "Right Master 12", rightMaster12);
