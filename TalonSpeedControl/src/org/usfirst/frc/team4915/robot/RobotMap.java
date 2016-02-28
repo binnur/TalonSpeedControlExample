@@ -92,8 +92,8 @@ public class RobotMap {
             //rightMaster12.configPeakOutputVoltage(+12.0f, -12.0f);
             
             // Add ramp up rate
-            leftMaster10.setVoltageRampRate(12.0);  // max allowable voltage change /sec: reach to 12V after 1sec
-            rightMaster12.setVoltageRampRate(12.0);
+            leftMaster10.setVoltageRampRate(48.0);  // max allowable voltage change /sec: reach to 12V after .25sec
+            rightMaster12.setVoltageRampRate(48.0);
             
             // Add SmartDashboard controls for testing
             // Add SmartDashboard live window
